@@ -156,6 +156,7 @@ private :
     int8u          private_stream_1_ID;
     size_t         private_stream_1_Offset;
     bool           private_stream_1_IsDvdVideo;
+    void           private_stream_1_LU_A();
 
     //private_stream_2 specific
     void           private_stream_2_TSHV_A0();
@@ -277,7 +278,7 @@ private :
     bool Header_Parser_QuickSearch();
 
     //Parsers
-    File__Analyze* ChooseParser_Ancillary();
+    File__Analyze* ChooseParser_Ancillary(bool IsSmpte2038=false);
     File__Analyze* ChooseParser_Mpegv();
     File__Analyze* ChooseParser_Mpeg4v();
     File__Analyze* ChooseParser_Avc();

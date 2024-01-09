@@ -47,3 +47,6 @@ MediaInfoLib.VC.db
 *.VC.db-shm
 *.VC.db-wal
 
+*.vsidx
+*.lock
+*.bin
