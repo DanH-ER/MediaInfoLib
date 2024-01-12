@@ -50,3 +50,4 @@ MediaInfoLib.VC.db
 *.vsidx
 *.lock
 *.bin
+Project/BCB/Library/__astcache/
